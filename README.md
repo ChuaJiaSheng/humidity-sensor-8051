@@ -17,7 +17,7 @@ Start with the wiring schematic, then read the operational flow diagrams and wat
 | [Page 2](hardware/Page%202.png) | DHT22-related flow diagram |
 | [Page 3](hardware/Page%203.png) | ADC-related flow diagram |
 | [Demonstration video](media/demo.mp4) | The assembled measurement hardware and displayed readings |
-| [Original QR image](hardware/qrcode.png) | Supporting QR asset preserved with the source collection |
+| [QR image](hardware/qrcode.png) | Supporting project QR image |
 
 ![8051 hardware schematic](hardware/8051%20Schematic.png)
 
@@ -35,7 +35,3 @@ The diagrams are reference material rather than automatically generated document
 ## Reproduction checklist
 
 Before attempting a local reconstruction, identify the exact 8051 variant, supply and signal levels, sensor/display interfaces, pin assignments, clock, programmer, and firmware dependencies. Compare those choices with the schematic and flow diagrams. These items must be verified on the intended hardware; they are not supplied as a tested bill of materials or build configuration here.
-
-## Evidence and verification limits
-
-The repository preserves the supplied design images and demo. These illustrate the prototype; they do not establish measurement accuracy, repeatability, calibration, or a production-ready sensor system. No hardware or firmware build has been tested during repository preparation. Additional private reports and slides are not included in the public repository.
