@@ -1,19 +1,41 @@
 # Humidity Sensor and 8051 Integration
 
-Hardware documentation and demonstration from humidity sensor fabrication and integration work at Chinese Culture University.
+Hardware documentation and a demonstration of a humidity-measurement prototype with an 8051-based sensor/display arrangement.
 
-**Technology:** 8051 and sensor hardware.
+**Repository type:** hardware portfolio and design documentation. A complete standalone firmware build project is not included.
 
-## Run or inspect
+## What this repository provides
 
-This is a hardware/documentation portfolio folder. `hardware` contains original schematic and page images; `media/demo.mp4` is the demonstration video.
+Start with the wiring schematic, then read the operational flow diagrams and watch the demonstration. These materials explain the supplied hardware prototype without requiring a software installation. There is no top-level build command because the repository does not contain a complete firmware toolchain project.
 
-The supplied standalone collection does not contain a complete 8051 firmware build tree. Code appeared in the original internship report appendices; those reports and slides remain in the full private backup. No firmware has been invented or reconstructed here. The internship covered humidity sensor fabrication/characterisation, 8051 integration, DHT22/LCD work and Arduino teaching at Chinese Culture University.
+## Explore the repository
 
-## Repository preparation
+| Material | What to inspect |
+| --- | --- |
+| [8051 schematic](hardware/8051%20Schematic.png) | The supplied microcontroller, sensor, and display wiring drawing |
+| [Page 1](hardware/Page%201.png) | Main operational flow diagram |
+| [Page 2](hardware/Page%202.png) | DHT22-related flow diagram |
+| [Page 3](hardware/Page%203.png) | ADC-related flow diagram |
+| [Demonstration video](media/demo.mp4) | The assembled measurement hardware and displayed readings |
+| [Original QR image](hardware/qrcode.png) | Supporting QR asset preserved with the source collection |
 
-Source and required assets were organised from existing coursework. Build outputs and IDE state are excluded. Original reports, slides and course handouts remain in the separate full backup; they are not bundled for public upload. Real credentials and original database records are not included.
+![8051 hardware schematic](hardware/8051%20Schematic.png)
 
-## Validation status
+Open the images directly in GitHub. The video is available through the file link; download it if GitHub does not play it inline.
 
-The preparation checked file paths, Python syntax where applicable, structured files, credential removal and package integrity. Windows desktop apps, Flutter apps, hardware and online services have not been built or run in this environment.
+## Reading the design
+
+- Use the schematic to trace the connections between the microcontroller, sensor interfaces, and display.
+- Follow Page 1 for the overall operating sequence.
+- Compare the sensor-reading sequence on Page 2 with the ADC-related sequence on Page 3.
+- Use the demo to see the assembled hardware and displayed readings. The video shows a demonstration, not a calibration procedure.
+
+The diagrams are reference material rather than automatically generated documentation from a firmware build. They do not establish the exact compiler settings, driver versions, clock configuration, or calibration values required for another board.
+
+## Reproduction checklist
+
+Before attempting a local reconstruction, identify the exact 8051 variant, supply and signal levels, sensor/display interfaces, pin assignments, clock, programmer, and firmware dependencies. Compare those choices with the schematic and flow diagrams. These items must be verified on the intended hardware; they are not supplied as a tested bill of materials or build configuration here.
+
+## Evidence and verification limits
+
+The repository preserves the supplied design images and demo. These illustrate the prototype; they do not establish measurement accuracy, repeatability, calibration, or a production-ready sensor system. No hardware or firmware build has been tested during repository preparation. Additional private reports and slides are not included in the public repository.
